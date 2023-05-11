@@ -1,0 +1,21 @@
+{
+  "name": "updatesystem",
+  "version": "0.0.0",
+  "description": "bot-mainアップデート用プログラム",
+  "main": "UpdateSystem.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "dev": "node UpdateSystem.js dev",
+    "run": "node UpdateSystem.js run"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/NITKC22s/UpdateSystem.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/NITKC22s/UpdateSystem/issues"
+  },
+  "homepage": "https://github.com/NITKC22s/UpdateSystem#readme"
+}
