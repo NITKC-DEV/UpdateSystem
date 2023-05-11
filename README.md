@@ -1,2 +1,2 @@
-# UpdateSysgtem
+# UpdateSystem
 bot-mainアップデート用プログラム
