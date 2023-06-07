@@ -4,6 +4,7 @@
   "description": "bot-mainアップデート用プログラム",
   "main": "UpdateSystem.js",
   "scripts": {
+    "test": "node UpdateSystem.js test",
     "dev": "node UpdateSystem.js dev",
     "run": "node UpdateSystem.js run"
   },
