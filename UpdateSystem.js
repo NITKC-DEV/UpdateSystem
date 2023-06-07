@@ -34,8 +34,8 @@ if(ind>mainInd){
     for(let i=mainInd+1;i<=ind;i++){
         if(versions[i].update===true){
             console.log(`Update v${versions[i-1].version} to v${versions[i].version}`);
-            const Update=require(`./${version}/Update.js`);
-            Update.update;
+            const Update=require(`./${versions[i].version}/Update.js`);
+            Update.update();
         }
         else{
             console.log(`No updates between v${versions[i-1].version} and v${versions[i].version}`);
@@ -46,7 +46,7 @@ else if(ind<mainInd){
     for(let i=mainInd;i<ind+1;i--){
         if(versions[i].outdate===true){
             console.log(`Outdate v${versions[i].version} to v${versions[i-1].version}`);
-            const Outdate=require(`./${version}/Outdate.js`);
+            const Outdate=require(`./${versions[i].version}/Outdate.js`);
             Outdate.outdate;
         }
         else{
