@@ -1,24 +1,22 @@
 const pack=require('./package.json');
 let ver;
-let mainpack;
+const envConfig=require("./environmentPath.js");
+envConfig.setConfig();
+let mainpack=require(targetPath+"/package.json");
 
 switch (process.argv[2]){
     case "test":
-        mainpack=require("../update-test/package.json");
         ver="0.0.0"
         break;
     case "dev":
-        mainpack=require("../update-test/package.json");
         ver=pack.version;
         break;
     case "run":
-        mainpack=require("../bot-main/package.json");
         ver=pack.version;
         break;
     default:
         console.error("\u001b[33mPlease set command line argument to test, dev or run\u001b[0m");
         console.error("Running type set to test");
-        mainpack=require("../update-test/package.json");
         ver="0.0.0";
         break;
 }

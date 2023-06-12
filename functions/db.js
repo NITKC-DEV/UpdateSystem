@@ -1,5 +1,4 @@
 const { MongoClient, ServerApiVersion } = require("mongodb");
-const config = require('../environmentConfig')
 const dbClient = new MongoClient(config.db, { serverApi: ServerApiVersion.v1 });
 
 /***
