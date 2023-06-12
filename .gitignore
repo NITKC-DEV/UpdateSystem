@@ -131,3 +131,6 @@ dist
 
 # JetBrains
 .idea/
+
+config.json
+config.dev.json
