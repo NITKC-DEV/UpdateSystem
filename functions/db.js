@@ -1,4 +1,4 @@
-const { MongoClient, ServerApiVersion } = require("mongodb");
+ const { MongoClient, ServerApiVersion } = require("mongodb");
 const dbClient = new MongoClient(config.db, { serverApi: ServerApiVersion.v1 });
 
 /***
@@ -70,4 +70,8 @@ exports.delete = async function run(dbName,collectionName,filter) {
     }
 }
 
+exports.close = async function close(){
+     await dbClient.close();
+     console.log("close");
+ }
 //引数の詳細については、mongodbの公式ドキュメントを参照すること

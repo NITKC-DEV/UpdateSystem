@@ -3,6 +3,7 @@ let ver;
 const envConfig = require ("./environmentPath.js");
 envConfig.setConfig ();
 let mainpack = require (targetPath + "/package.json");
+const db = require ("./functions/db.js");
 
 async function main() {
     switch (process.argv[2]) {
@@ -62,5 +63,6 @@ async function main() {
         const Outdate = require (`./0.0.0/Outdate.js`);
         await Outdate.outdate ();
     }
+    db.close();
 }
 main();
