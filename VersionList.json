@@ -14,6 +14,6 @@
     {"version": "4.0.4","update": false,"outdate": false},
     {"version": "4.0.5","update": false,"outdate": false},
     {"version": "4.0.6","update": false,"outdate": false},
-    {"version": "0.0.0","update": true, "outdate": false}
+    {"version": "0.0.0","update": false, "outdate": true}
   ]
 }

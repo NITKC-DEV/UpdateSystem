@@ -63,6 +63,6 @@ async function main() {
         const Outdate = require (`./0.0.0/Outdate.js`);
         await Outdate.outdate ();
     }
-    db.close();
+    await db.close();
 }
 main();

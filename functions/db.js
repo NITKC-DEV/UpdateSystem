@@ -69,9 +69,12 @@ exports.delete = async function run(dbName,collectionName,filter) {
         await console.error(`${dbName}.${collectionName}からレコードを削除できませんでした`,err,`DB削除失敗`);
     }
 }
-
-exports.close = async function close(){
+ 
+ /***
+  * データーベースとの接続を切る
+  */
+ exports.close = async function close(){
      await dbClient.close();
-     console.log("close");
+     console.log("DBとの接続を終了しました。");
  }
 //引数の詳細については、mongodbの公式ドキュメントを参照すること
