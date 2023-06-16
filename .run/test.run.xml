@@ -1,5 +1,0 @@
-<component name="ProjectRunConfigurationManager">
-  <configuration default="false" name="test" type="NodeJSConfigurationType" singleton="false" application-parameters="test" path-to-js-file="./UpdateSystem.js" working-dir="$PROJECT_DIR$">
-    <method v="2" />
-  </configuration>
-</component>

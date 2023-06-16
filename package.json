@@ -17,5 +17,12 @@
   "bugs": {
     "url": "https://github.com/NITKC22s/UpdateSystem/issues"
   },
-  "homepage": "https://github.com/NITKC22s/UpdateSystem#readme"
+  "homepage": "https://github.com/NITKC22s/UpdateSystem#readme",
+  "dependencies": {
+    "enquirer": "^2.3.6",
+    "fs": "^0.0.1-security",
+    "mongodb": "^5.6.0",
+    "node": "^18.16.0",
+    "path": "^0.12.7"
+  }
 }
