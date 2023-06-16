@@ -1,5 +1,7 @@
- const { MongoClient, ServerApiVersion } = require("mongodb");
-const dbClient = new MongoClient(config.db, { serverApi: ServerApiVersion.v1 });
+const { MongoClient, ServerApiVersion } = require("mongodb");
+const EnvPath=require("../EnvironmentPath");
+EnvPath.setEnvPath();
+const dbClient = new MongoClient(global.config.db, { serverApi: ServerApiVersion.v1 });
 
 /***
  * データベースからデータを取得する

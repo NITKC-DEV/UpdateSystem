@@ -87,11 +87,10 @@ async function changeDBCC () {
     }
     const ccconfigJ = JSON.stringify (ccconfig, null, 2);
     try {
-        fs.writeFileSync (targetPath + "/CCConfig.json", ccconfigJ, "utf-8");
+        fs.writeFileSync (global.targetPath + "/CCConfig.json", ccconfigJ, "utf-8");
     }
     catch (e) {
         console.log (e);
     }
-    
-    return;
+    console.log("hello");
 }
