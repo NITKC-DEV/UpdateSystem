@@ -19,11 +19,17 @@ const {setEnvPath} = require("./EnvironmentPath");
 async function modeBranch(mode) {
     switch(mode) {
         case "test":
+            global.targetPath=Path.resolve(__dirname, "../update-test");
             global.mode=mode;
             await testMord();
             break;
         case "dev":
+            global.targetPath=Path.resolve(__dirname, "../update-test");
+            global.mode=mode;
+            await productMode();
+            break
         case "run":
+            global.targetPath=Path.resolve(__dirname, "../bot-main");
             global.mode=mode;
             await productMode();
             break;
